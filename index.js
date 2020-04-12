@@ -17,7 +17,6 @@ btn.addEventListener('click',()=>{
 		return res.json()
 	})
 	.then(data=> {
-		console.log(username)
 		if (data.name == null || undefined){
 			profile.innerHTML = `<div class="alert alert-warning" role="alert">
 			No result found
@@ -60,7 +59,6 @@ btn.addEventListener('click',()=>{
 			</div>
 			</div>
 			`
-			console.log(data)
 		}
 	})
 
